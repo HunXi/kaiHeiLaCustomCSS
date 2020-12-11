@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" id="favicon" href="/app/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="keywords" content="开黑啦,开黑啦语音,开黑,连麦,游戏,游戏语音,组队,游戏组队,队伍语音,群聊">
+    <meta name="description" content="开黑啦是专属游戏玩家的语音和组队工具，安全免费、没有广告、低占用高质量。全新的组队设计，给你的游戏体验带来新的可能。">
+    <meta property="og:site_name" content="开黑啦">
+    <meta property="og:image" content="https://kaiheila.cn/favicon.ico">
+    <meta property="og:image:type" content="image/ico">
+    <meta name="theme-color" content="#46a5f7">
+    <title>开黑啦</title>
+    <script>
+        var UID_KEY = 'ua_client_id';
+        var randomString = function(len) {
+            len = len || 32;
+            var $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789'; /****默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1****/
+            var maxPos = $chars.length;
+            var pwd = '';
+            for (i = 0; i < len; i++) {
+                pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+            }
+            return pwd;
+        }
+        var global_getCookie = function(key) {
+            const name = key + '='
+            const ca = document.cookie.split(';')
+            for (let i = 0; i < ca.length; i++) {
+                const c = ca[i].trim()
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length)
+                }
+            }
+            return ''
+        }
+
+        // 设置cookie,10年
+        var global_setCookie = function(key, value) {
+            var d = new Date()
+            var time = 10 * 12 * 30 * 24 * 60 * 60 * 1000
+            d.setTime(d.getTime() + time)
+            var expires = 'expires=' + d.toGMTString()
+            var path = 'path=/'
+            var doMainOrigin = window.location.href.search(/kaiheila/) > -1 ? 'kaiheila.cn' : 'chuanyuapp.com'
+            var doMain = 'domain=' + doMainOrigin
+            window.document.cookie = key + '=' + value + '; ' + expires + '; ' + path + '; ' + doMain
+        }
+        if (!global_getCookie(UID_KEY)) {
+            var strs = randomString(32)
+            global_setCookie(UID_KEY, strs)
+        }
+    </script>
+    <script>
+        var hideConsole = !1; - 1 < window.location.href.search(/kaiheila/) && -1 == window.location.href.search(/#test/) && (hideConsole = !0, window._originLog = window.console.log, window.console.log = function() {})
+    </script>
+    <script src="/app/assets/lib/nvc_opt.js"></script>
+    <script src="/app/assets/lib/guide.js"></script>
+    <script src="/app/assets/lib/protobuf.min.js"></script>
+    <script src="/app/assets/lib/RongIMLib-2.5.0.min.js"></script>
+    <script src="/app/assets/lib/RongEmoji-2.2.7.min.js"></script>
+    <script src="/app/assets/lib/AgoraRTCSDK-3.0.0.js"></script>
+    <script src="/app/assets/lib/twemoji.12.1.5.min.js"></script>
+    <script src="/app/assets/lib/libamr-min.js"></script>
+    <script src="/app/assets/lib/pcmdata-2.0.0.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        ! function() {
+            var e = document.createElement("script");
+            e.src = "https://hm.baidu.com/hm.js?50b3c73501f0d4acc2ba97ea62c53cbb";
+            var t = document.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t)
+        }()
+    </script>
+    <link href="/app/static/css/5.3445fd1b.chunk.css" rel="stylesheet">
+    <link href="/app/static/css/index.631f0e2f.chunk.css" rel="stylesheet">
+    <link href="/app/static/css/com.video.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="bg">
+        <video id="v1" autoplay loop muted>
+          <source src="/app/static/videos/FIXED_1.mp4" type="video/mp4"  />
+        </video>
+    </div>
+    <div id="root"></div>
+    <script>
+        ! function(l) {
+            function e(e) {
+                for (var r, t, n = e[0], o = e[1], u = e[2], a = 0, i = []; a < n.length; a++) t = n[a], Object.prototype.hasOwnProperty.call(f, t) && f[t] && i.push(f[t][0]), f[t] = 0;
+                for (r in o) Object.prototype.hasOwnProperty.call(o, r) && (l[r] = o[r]);
+                for (s && s(e); i.length;) i.shift()();
+                return c.push.apply(c, u || []), p()
+            }
+
+            function p() {
+                for (var e, r = 0; r < c.length; r++) {
+                    for (var t = c[r], n = !0, o = 1; o < t.length; o++) {
+                        var u = t[o];
+                        0 !== f[u] && (n = !1)
+                    }
+                    n && (c.splice(r--, 1), e = a(a.s = t[0]))
+                }
+                return e
+            }
+            var t = {},
+                f = {
+                    2: 0
+                },
+                c = [];
+
+            function a(e) {
+                if (t[e]) return t[e].exports;
+                var r = t[e] = {
+                    i: e,
+                    l: !1,
+                    exports: {}
+                };
+                return l[e].call(r.exports, r, r.exports, a), r.l = !0, r.exports
+            }
+            a.m = l, a.c = t, a.d = function(e, r, t) {
+                a.o(e, r) || Object.defineProperty(e, r, {
+                    enumerable: !0,
+                    get: t
+                })
+            }, a.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, a.t = function(r, e) {
+                if (1 & e && (r = a(r)), 8 & e) return r;
+                if (4 & e && "object" == typeof r && r && r.__esModule) return r;
+                var t = Object.create(null);
+                if (a.r(t), Object.defineProperty(t, "default", {
+                        enumerable: !0,
+                        value: r
+                    }), 2 & e && "string" != typeof r)
+                    for (var n in r) a.d(t, n, function(e) {
+                        return r[e]
+                    }.bind(null, n));
+                return t
+            }, a.n = function(e) {
+                var r = e && e.__esModule ? function() {
+                    return e.default
+                } : function() {
+                    return e
+                };
+                return a.d(r, "a", r), r
+            }, a.o = function(e, r) {
+                return Object.prototype.hasOwnProperty.call(e, r)
+            }, a.p = "/app/";
+            var r = window["webpackJsonpkaihei-react"] = window["webpackJsonpkaihei-react"] || [],
+                n = r.push.bind(r);
+            r.push = e, r = r.slice();
+            for (var o = 0; o < r.length; o++) e(r[o]);
+            var s = n;
+            p()
+        }([])
+    </script>
+    <script src="/app/static/js/0.7f919e1a.chunk.js"></script>
+    <script src="/app/static/js/5.3c7057e0.chunk.js"></script>
+    <script src="/app/static/js/index.f887f2da.chunk.js"></script>
+</body>
+
+</html>

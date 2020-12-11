@@ -1,0 +1,404 @@
+/* 屏蔽下载广告 */
+
+.download-app-tips {
+    display: none;
+}
+
+.menu-icon-item.menu-icon-item-icon+a+a {
+    display: none;
+}
+
+
+/* 屏蔽 左边服务器 选中 多余效果 */
+
+.icon-button-wrap svg {
+    display: none;
+}
+
+
+/* 去除 全局背景色 */
+
+.app-main-wrapper {
+    background-color: transparent;
+}
+
+
+/* 左边服务器 背景色 */
+
+div#app-left-nav {
+    background-color: transparent;
+}
+
+
+/* 左边服务器 图标 选中 背景色 */
+
+.menu-icon-item.active .icon-button-wrap {
+    background-color: rgba(0, 0, 0, 0.25);
+    /* border-radius: unset; */
+}
+
+
+/* 左边服务器 图标 鼠标 悬停 背景色 */
+
+.app-left-nav .menu-icon-item:hover .icon-button {
+    background-color: transparent;
+}
+
+
+/* 左边服务器 图标 大小 */
+
+.menu-icon-item .icon-button {
+    width: 55px;
+    height: 55px;
+}
+
+
+/* 视频 背景层 */
+
+div#bg {
+    position: absolute;
+}
+
+video#v1 {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.app-main-container .content-wrapper {
+    background-color: transparent;
+}
+
+
+/* 推荐服务器 去除圆角 */
+
+.server-left-container .server-top-bg-layer {
+    border-radius: unset;
+}
+
+.server-left-container .server-top-bg-layer .server-top-bg-mask {
+    border-radius: unset;
+}
+
+
+/* 左边 背景色  */
+
+.server-left-container {
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: transparent;
+}
+
+
+/* 左边 评到列表 背景色 */
+
+.channel-list-container {
+    background-color: transparent;
+}
+
+
+/* 左边 频道 项目 背景色 */
+
+.channel-item {
+    background-color: transparent;
+}
+
+
+/* 左边 频道 项目 悬停 背景色 */
+
+.channel-item .channel-title:hover {
+    background-image: unset;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: unset;
+}
+
+
+/* 频道 项目 上下 外边距 */
+
+.channel-item {
+    margin: 3px 0px;
+}
+
+
+/* 左边 频道 项目 选中 背景色 */
+
+.channel-item.type-text.active .channel-title {
+    background-image: unset;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: unset;
+}
+
+
+/* 左边 频道 项目 选中 上下小三角 屏蔽 */
+
+.channel-item svg {
+    display: none;
+}
+
+
+/* 音频 设置 面板 背景色 去阴影 */
+
+.audio-box {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: unset;
+}
+
+
+/* 房间背景色 */
+
+.room-layout .room-layout-inner {
+    background-color: unset;
+}
+
+.room-layout {
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: transparent;
+}
+
+.room-layout .room-header {
+    background-color: unset;
+}
+
+.room-layout .room-header .header-right {
+    background-color: unset;
+}
+
+
+/* 房间 左边 聊天信息显示 背景色 */
+
+.room-content-left {
+    border-radius: unset;
+    background-color: unset;
+}
+
+
+/* 房间 下边 聊天输入 背景色 */
+
+.theme-dark .theme-send-ctrl-bg {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+/* 用户 列表 背景色 去边框 去圆角 */
+
+.room-content-right {
+    background-color: transparent;
+    border-radius: unset;
+    border-left: unset;
+}
+
+
+/* 标题栏 高度 背景色 */
+
+.win-title-bar {
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: transparent;
+    color: #fff;
+}
+
+
+/* 标题栏 按钮 大小 */
+
+.win-title-bar .win-button {
+    width: 28px;
+}
+
+
+/* 标题栏 字体 文字大小 */
+
+span.win-title {
+    font-family: mansalva;
+    font-size: 18px;
+}
+
+
+/* 房间说明 字体溢出处理 */
+
+.room-title.theme-color-87 {
+    display: inline-block;
+}
+
+.room-tops {
+    display: block;
+    width: 180px;
+}
+
+.header-left .room-tops .room-toptips {
+    display: inline-block;
+    width: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+
+/* 标题栏 内边距 */
+
+.win-title-bar .win-title {
+    padding: 0px 5px;
+}
+
+.app-main-container,
+.app-main-wrapper {
+    height: 100%;
+    position: relative;
+    top: -2px;
+}
+
+
+/* 消息 悬停 菜单 */
+
+.message-context-menu-button {
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+/* 我的主页 左边 联系人 背景色 */
+
+.theme-dark .theme-left-side-bg {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+/* 我的主页 左边 联系人 选中项目背景色 */
+
+.home-nav-container .nav-item.active {
+    background-image: unset;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+/* 我的主页 左边 联系人 选中项目去除多余svg */
+
+a.nav-item svg {
+    display: none;
+}
+
+
+/* 我的主页 左边 联系人 项目 去除圆角 */
+
+a.nav-item.second-nav-item {
+    border-radius: unset;
+}
+
+a.nav-item.second-nav-item.all-friend {
+    border-radius: unset;
+}
+
+
+/* 我的主页 左边 联系人 鼠标悬停项目 背景色 */
+
+.home-nav-container .nav-item:hover {
+    background-color: transparent;
+    background-image: unset;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+/* 我的主页 左边 联系人 选中项目 小手机图标 背景色 */
+
+.home-nav-container .nav-item.active .mobile-online {
+    background-color: transparent;
+}
+
+.mobile-online.theme-left-side-bg {
+    background-color: transparent;
+}
+
+
+/* 我的主页 右边 底 背景色 */
+
+.home-main-wrapper {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+/* 我的主页 右边 背景色 */
+
+.home-main-container {
+    background-color: transparent;
+}
+
+
+/* 私聊 右边 底 背景色 */
+
+.private-message-container {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+/* 私聊 标题 左边 背景色 */
+
+.private-message-title {
+    background-color: transparent;
+}
+
+
+/* 私聊 标题 右边 背景色 */
+
+.private-message-title .rich-search-input-wrapper {
+    background-color: transparent;
+}
+
+
+/* 私聊 信息显示 背景色 */
+
+.private-message-main-left {
+    background-color: transparent;
+}
+
+
+/* @背景色处理 */
+
+.text-message-item .message-wraper.theme-mention-me-content.active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+/* 消息选中 阴影处理 */
+
+.theme-dark .text-message-item .message-wraper.active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.text-message-item .message-wraper.active {
+    box-shadow: none;
+    background-color: unset;
+}
+
+.text-message-item .message-wraper {
+    border-radius: unset;
+}
+
+
+/* 设置界面修改 */
+
+.setting-mask-content-left {
+    background-color: transparent;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+/* @文字跑马灯 */
+
+.mention-user-name {
+    background: -webkit-linear-gradient(left, #ffffff, #ff0000 6.25%, #ff7d00 12.5%, #ffff00 18.75%, #00ff00 25%, #00ffff 31.25%, #0000ff 37.5%, #ff00ff 43.75%, #ffff00 50%, #ff0000 56.25%, #ff7d00 62.5%, #ffff00 68.75%, #00ff00 75%, #00ffff 81.25%, #0000ff 87.5%, #ff00ff 93.75%, #ffff00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: slide 2s infinite linear;
+}
