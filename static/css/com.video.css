@@ -312,6 +312,13 @@ a.nav-item.second-nav-item.all-friend {
 }
 
 
+/* 手机 在线 小手机图标 背景 透明 */
+
+.user-list-container .user-item .user-head .mobile-online {
+    background-color: transparent;
+}
+
+
 /* 我的主页 右边 底 背景色 */
 
 .home-main-wrapper {
