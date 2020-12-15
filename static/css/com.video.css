@@ -400,6 +400,66 @@ a.nav-item.second-nav-item.all-friend {
 }
 
 
+/* 资料卡片 头像 */
+
+.user-info-card .card-head {
+    border: unset;
+}
+
+.user-info-card .card-head .user-avator {
+    border: unset;
+}
+
+
+/* 资料卡 上 背景 */
+
+.user-info-card {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* 资料卡 下 背景 */
+
+.user-role-panel {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 资料卡 游戏状态 背景 */
+
+.user-info-card .user-game-panel {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 资料卡 私信 背景色 */
+
+.send-private-message {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 资料卡 边框色 */
+
+.user-info-card.user-playing-game {
+    border: 5px solid #C62F2F;
+}
+
+
+/* 头像 去除内边距 */
+
+.user-info-card.user-playing-game .card-head {
+    padding: unset;
+}
+
+
+/* 游戏状态 背景色 */
+
+.user-info-card.user-playing-game .user-game-panel .content {
+    background-color: #C62F2F;
+}
+
+
 /* @文字跑马灯 */
 
 .mention-user-name {
