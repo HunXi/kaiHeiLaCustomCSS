@@ -16,6 +16,25 @@
 }
 
 
+/* 载入界面 修改 */
+
+.connect-center-layout {
+    background-color: #fff;
+}
+
+.connect-center-layout .connect-box div.connect-tips {
+    color: #3e3e3e;
+}
+
+.connect-center-layout .connect-box .connect-info {
+    color: #3e3e3e;
+}
+
+div.root div.win-wapper div.win-title-bar {
+    color: #3e3e3e;
+}
+
+
 /* 去除 全局背景色 */
 
 .app-main-wrapper {
@@ -27,6 +46,11 @@
 
 div#app-left-nav {
     background-color: transparent;
+}
+
+div.win-wapper {
+    padding-top: 20px;
+    background-color: #fff;
 }
 
 
@@ -247,7 +271,7 @@ span.win-title {
 .app-main-wrapper {
     height: 100%;
     position: relative;
-    top: -2px;
+    top: 0px;
 }
 
 
