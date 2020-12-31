@@ -484,6 +484,41 @@ a.nav-item.second-nav-item.all-friend {
 }
 
 
+/* @提示框 背景 */
+
+div.text-room-container .mention-list {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* emoji面板 背景 */
+
+div.emoji-panel {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* emoji 面板 分组 条 背景色 */
+
+.emoji-categorie-list {
+    background-color: transparent;
+}
+
+
+/* 右键菜单 背景色 */
+
+.message-context-menu {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 右键菜单 子菜单 背景色 */
+
+.sub-menu-reaction {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 /* @文字跑马灯 */
 
 .mention-user-name {
