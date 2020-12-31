@@ -206,6 +206,13 @@ video#v1 {
 }
 
 
+/* 聊天文字 加荧光效果 增加可读性 */
+
+.content .content-html span:not(.mention-user-name) {
+    text-shadow: 0 0 10px red, 0 0 20px red;
+}
+
+
 /* 用户 列表 背景色 去边框 去圆角 */
 
 .room-content-right {
