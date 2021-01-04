@@ -9,6 +9,21 @@
 }
 
 
+/* 发现服务器 背景色透明处理 */
+
+.guide-page {
+    background-color: transparent;
+}
+
+
+/* 发现服务器搜索框 背景 */
+
+.discovery-search-box .discover-input-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: unset;
+}
+
+
 /* 屏蔽 左边服务器 选中 多余效果 */
 
 .icon-button-wrap svg {
@@ -293,7 +308,8 @@ span.win-title {
 /* 我的主页 左边 联系人 背景色 */
 
 .theme-dark .theme-left-side-bg {
-    background-color: rgba(0, 0, 0, 0.25);
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: transparent;
 }
 
 
@@ -301,7 +317,8 @@ span.win-title {
 
 .home-nav-container .nav-item.active {
     background-image: unset;
-    background-color: rgba(0, 0, 0, 0.25);
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: transparent;
 }
 
 
@@ -350,10 +367,25 @@ a.nav-item.second-nav-item.all-friend {
 }
 
 
+/* 手机 在线 小手机图标 在线列表 背景 透明 */
+
+.friend-user-avatar .mobile-online {
+    background-color: transparent;
+}
+
+
+/* 手机 在线 小手机图标 在线列表 选中 背景 透明 */
+
+.theme-dark .friend-user-item:hover .mobile-online {
+    background-color: transparent;
+}
+
+
 /* 我的主页 右边 底 背景色 */
 
 .home-main-wrapper {
-    background-color: rgba(0, 0, 0, 0.25);
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: transparent;
 }
 
 
@@ -367,7 +399,8 @@ a.nav-item.second-nav-item.all-friend {
 /* 私聊 右边 底 背景色 */
 
 .private-message-container {
-    background-color: rgba(0, 0, 0, 0.25);
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: transparent;
 }
 
 
