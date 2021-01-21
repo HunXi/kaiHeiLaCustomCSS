@@ -237,6 +237,16 @@ video#v1 {
 }
 
 
+/* 用户搜索框 */
+
+
+/* 背景色 */
+
+.user-search-box {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
 /* 标题栏 高度 背景色 */
 
 .win-title-bar {
@@ -302,6 +312,13 @@ span.win-title {
 .message-context-menu-button {
     right: 10px;
     background-color: rgba(0, 0, 0, 0.25);
+}
+
+
+/* 右侧 用户 右键菜单 */
+
+.user-setting-menu {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -527,14 +544,14 @@ a.nav-item.second-nav-item.all-friend {
 /* @提示框 背景 */
 
 div.text-room-container .mention-list {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
 /* emoji面板 背景 */
 
 div.emoji-panel {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -548,14 +565,21 @@ div.emoji-panel {
 /* 右键菜单 背景色 */
 
 .message-context-menu {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 
 /* 右键菜单 子菜单 背景色 */
 
 .sub-menu-reaction {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* 修改昵称 弹出框 背景色 */
+
+.theme-abled {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
